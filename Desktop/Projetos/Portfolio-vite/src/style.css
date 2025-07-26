@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+/* Fix para o scroll-behavior suave em navegadores que não suportam 'scroll-snap' nativamente */
+html {
+  scroll-behavior: smooth;
+}
+/* Custom scrollbar para uma estética futurista */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a202c; /* Cor do fundo da barra de rolagem */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #2E86D0,
+    #2CE1C6
+  ); /* Gradiente do "polegar" da barra */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2E86D0, #2CE1C6);
+}
